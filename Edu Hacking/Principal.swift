@@ -33,6 +33,72 @@ class Principal: UIViewController {
         return lb
     }()
     
+    let segmentElements: UIStackView = {
+        let stack = UIStackView()
+        let lb = UILabel()
+        lb.text = "Top 10 Web Application Security Risks"
+        lb.font = UIFont(name: "Roboto-Regular", size: 25) ?? UIFont(name:"ArialRoundedMTBold", size: 25)
+        lb.textColor = .white
+        lb.numberOfLines = 0
+        lb.textAlignment = .center
+        stack.addSubview(lb)
+
+        let uiImg = UIImageView()
+        uiImg.image = UIImage(named: "segment01")
+        stack.addSubview(uiImg)
+        
+        uiImg.translatesAutoresizingMaskIntoConstraints = false
+        lb.translatesAutoresizingMaskIntoConstraints = false
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            lb.widthAnchor.constraint(equalTo: stack.widthAnchor),
+            uiImg.widthAnchor.constraint(equalTo: stack.widthAnchor),
+            uiImg.topAnchor.constraint(equalTo: lb.bottomAnchor, constant: 20)
+        ])
+        return stack
+    }()
+    
+    let segmentElementsPercentual: UIStackView = {
+        let stack = UIStackView()
+        let lb = UILabel()
+        lb.text = "Percentual"
+        lb.font = UIFont(name: "Roboto-Regular", size: 25) ?? UIFont(name:"ArialRoundedMTBold", size: 25)
+        lb.textColor = .white
+        lb.numberOfLines = 0
+        lb.textAlignment = .center
+        stack.addSubview(lb)
+
+        let uiImg = UIImageView()
+        uiImg.image = UIImage(named: "segment02")
+        stack.addSubview(uiImg)
+        
+        uiImg.translatesAutoresizingMaskIntoConstraints = false
+        lb.translatesAutoresizingMaskIntoConstraints = false
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            lb.widthAnchor.constraint(equalTo: stack.widthAnchor),
+            uiImg.widthAnchor.constraint(equalTo: stack.widthAnchor),
+            uiImg.topAnchor.constraint(equalTo: lb.bottomAnchor, constant: 20)
+        ])
+        
+        stack.isHidden = true
+        return stack
+    }()
+    
+    let segmentControl: UISegmentedControl = {
+        let seg = UISegmentedControl(items: ["TOP", "%"])
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font:  UIFont(name: "Roboto-Regular", size: 30) ?? UIFont(name:"ArialRoundedMTBold", size: 30)]
+        seg.selectedSegmentIndex = 0
+        seg.backgroundColor = UIColor(red: 0.076,green: 0.072,blue: 0.072, alpha: 1.0)
+        seg.selectedSegmentTintColor = UIColor(red: 0.252,green: 0.24,blue: 0.24, alpha: 1.0)
+        seg.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .normal)
+        seg.addTarget(self, action: #selector(actionSegmentControl), for: .valueChanged)
+        seg.translatesAutoresizingMaskIntoConstraints = false
+        return seg
+    }()
+    
     let titleSub: UILabel = {
         let lb = UILabel()
         lb.text = "Os Três tipos de ataques mais comuns no ano."
@@ -83,7 +149,19 @@ class Principal: UIViewController {
         }
         
     }
-        
+    
+    @objc
+    func actionSegmentControl (sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+              case 1:
+                segmentElementsPercentual.isHidden = false
+                segmentElements.isHidden = true
+              default:
+                segmentElements.isHidden = false
+                segmentElementsPercentual.isHidden = true
+              }
+    }
+    
     func doTop(_ s: String, tc: Bool = true) -> UIStackView {
         let stc: UIStackView = UIStackView()
         let lb = UILabel()
@@ -111,6 +189,9 @@ class Principal: UIViewController {
         stackView.addSubview(titleMain)
         stackView.addSubview(titleSub)
         stackView.addSubview(top)
+        stackView.addSubview(segmentControl)
+        stackView.addSubview(segmentElements)
+        stackView.addSubview(segmentElementsPercentual)
         view.addSubview(stackView)
         configLayoutViews()
     }
@@ -125,10 +206,21 @@ class Principal: UIViewController {
             titleSub.centerYAnchor.constraint(equalTo: titleMain.bottomAnchor, constant: 15),
             top.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant: -60),
             top.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
-            top.centerYAnchor.constraint(equalTo: titleSub.bottomAnchor, constant: 100)
+            top.centerYAnchor.constraint(equalTo: titleSub.bottomAnchor, constant: 100),
+            segmentControl.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant: -60),
+            segmentControl.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
+            segmentControl.topAnchor.constraint(equalTo: top.bottomAnchor, constant: 60),
+            segmentControl.heightAnchor.constraint(equalToConstant: 40),
+            segmentElements.topAnchor.constraint(equalTo: segmentControl.bottomAnchor, constant: 30),
+            segmentElements.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant:  -60),
+            segmentElements.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
+            segmentElementsPercentual.topAnchor.constraint(equalTo: segmentControl.bottomAnchor, constant: 30),
+            segmentElementsPercentual.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant:  -60),
+            segmentElementsPercentual.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
         ])
        
     }
+    
         
 
 }
