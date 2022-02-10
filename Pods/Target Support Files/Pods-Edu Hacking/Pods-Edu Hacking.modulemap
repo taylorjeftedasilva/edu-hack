@@ -1,0 +1,6 @@
+framework module Pods_Edu_Hacking {
+  umbrella header "Pods-Edu Hacking-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DBBB1D48-9155-47CA-8DB0-565EAF067753"
-            shouldBeEnabled = "Yes"
+            uuid = "6DC274B6-3279-467A-8315-5597DE4676D5"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Edu Hacking/ViewController.swift"
+            filePath = "Edu Hacking/Views/Componets/Login.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "configTitle()"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "constraints()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

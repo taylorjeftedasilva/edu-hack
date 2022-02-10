@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3453CAB1278D98210000C299 /* Principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453CAB0278D98210000C299 /* Principal.swift */; };
+		34211A8A27AC07D200501097 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34211A8927AC07D200501097 /* TabBarViewController.swift */; };
+		3434F9E9279DF4FD004EF8D6 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434F9E8279DF4FD004EF8D6 /* Launch.swift */; };
+		3434F9EC279DF9FC004EF8D6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3434F9EB279DF9FC004EF8D6 /* Login.swift */; };
+		3453CAB1278D98210000C299 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453CAB0278D98210000C299 /* HomeViewController.swift */; };
 		346DCBE92771DDB80093CE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DCBE82771DDB80093CE22 /* AppDelegate.swift */; };
 		346DCBEB2771DDB80093CE22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DCBEA2771DDB80093CE22 /* SceneDelegate.swift */; };
-		346DCBED2771DDB80093CE22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DCBEC2771DDB80093CE22 /* ViewController.swift */; };
+		346DCBED2771DDB80093CE22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346DCBEC2771DDB80093CE22 /* LoginViewController.swift */; };
 		346DCBF02771DDB80093CE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346DCBEE2771DDB80093CE22 /* Main.storyboard */; };
 		346DCBF22771DDBA0093CE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346DCBF12771DDBA0093CE22 /* Assets.xcassets */; };
 		346DCBF52771DDBA0093CE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346DCBF32771DDBA0093CE22 /* LaunchScreen.storyboard */; };
-		346DCBFD2771F6370093CE22 /* hack.svg in Resources */ = {isa = PBXBuildFile; fileRef = 346DCBFC2771F6370093CE22 /* hack.svg */; };
+		B7A70A6C064928A9B6494CBB /* Pods_Edu_Hacking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCAA70CF2D6D02E994A9035 /* Pods_Edu_Hacking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3453CAB0278D98210000C299 /* Principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Principal.swift; sourceTree = "<group>"; };
+		34211A8927AC07D200501097 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3434F9E8279DF4FD004EF8D6 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		3434F9EB279DF9FC004EF8D6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3453CAB0278D98210000C299 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		346DCBE52771DDB80093CE22 /* Edu Hacking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Edu Hacking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		346DCBE82771DDB80093CE22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		346DCBEA2771DDB80093CE22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		346DCBEC2771DDB80093CE22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		346DCBEC2771DDB80093CE22 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		346DCBEF2771DDB80093CE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		346DCBF12771DDBA0093CE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		346DCBF42771DDBA0093CE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		346DCBF62771DDBA0093CE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		346DCBFC2771F6370093CE22 /* hack.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hack.svg; sourceTree = "<group>"; };
+		8BCAA70CF2D6D02E994A9035 /* Pods_Edu_Hacking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Edu_Hacking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28AF1D00B107E362F41DAC1 /* Pods-Edu Hacking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edu Hacking.debug.xcconfig"; path = "Target Support Files/Pods-Edu Hacking/Pods-Edu Hacking.debug.xcconfig"; sourceTree = "<group>"; };
+		EFA9E59AAF6F83210B379553 /* Pods-Edu Hacking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edu Hacking.release.xcconfig"; path = "Target Support Files/Pods-Edu Hacking/Pods-Edu Hacking.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A70A6C064928A9B6494CBB /* Pods_Edu_Hacking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3434F9E2279DF4AB004EF8D6 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				3434F9E8279DF4FD004EF8D6 /* Launch.swift */,
+				3434F9EB279DF9FC004EF8D6 /* Login.swift */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		3434F9EA279DF9BC004EF8D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3453CAB0278D98210000C299 /* HomeViewController.swift */,
+				346DCBEC2771DDB80093CE22 /* LoginViewController.swift */,
+				34211A8927AC07D200501097 /* TabBarViewController.swift */,
+				3434F9E2279DF4AB004EF8D6 /* Componets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		346DCBDC2771DDB80093CE22 = {
 			isa = PBXGroup;
 			children = (
 				346DCBE72771DDB80093CE22 /* Edu Hacking */,
 				346DCBE62771DDB80093CE22 /* Products */,
+				83F0CDD30CE5B3ECEDD22FCE /* Pods */,
+				58DC324FB4B5481F87603C75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +91,33 @@
 		346DCBE72771DDB80093CE22 /* Edu Hacking */ = {
 			isa = PBXGroup;
 			children = (
+				3434F9EA279DF9BC004EF8D6 /* Views */,
 				346DCBE82771DDB80093CE22 /* AppDelegate.swift */,
 				346DCBEA2771DDB80093CE22 /* SceneDelegate.swift */,
-				346DCBEC2771DDB80093CE22 /* ViewController.swift */,
-				3453CAB0278D98210000C299 /* Principal.swift */,
 				346DCBEE2771DDB80093CE22 /* Main.storyboard */,
 				346DCBF12771DDBA0093CE22 /* Assets.xcassets */,
-				346DCBFC2771F6370093CE22 /* hack.svg */,
 				346DCBF32771DDBA0093CE22 /* LaunchScreen.storyboard */,
 				346DCBF62771DDBA0093CE22 /* Info.plist */,
 			);
 			path = "Edu Hacking";
+			sourceTree = "<group>";
+		};
+		58DC324FB4B5481F87603C75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BCAA70CF2D6D02E994A9035 /* Pods_Edu_Hacking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83F0CDD30CE5B3ECEDD22FCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E28AF1D00B107E362F41DAC1 /* Pods-Edu Hacking.debug.xcconfig */,
+				EFA9E59AAF6F83210B379553 /* Pods-Edu Hacking.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 346DCBF92771DDBA0093CE22 /* Build configuration list for PBXNativeTarget "Edu Hacking" */;
 			buildPhases = (
+				5C7F841D83778AF649D0C7F0 /* [CP] Check Pods Manifest.lock */,
 				346DCBE12771DDB80093CE22 /* Sources */,
 				346DCBE22771DDB80093CE22 /* Frameworks */,
 				346DCBE32771DDB80093CE22 /* Resources */,
+				D561FE8E06FE0AE1CA477DE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,7 +181,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				346DCBF52771DDBA0093CE22 /* LaunchScreen.storyboard in Resources */,
-				346DCBFD2771F6370093CE22 /* hack.svg in Resources */,
 				346DCBF22771DDBA0093CE22 /* Assets.xcassets in Resources */,
 				346DCBF02771DDB80093CE22 /* Main.storyboard in Resources */,
 			);
@@ -140,14 +188,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C7F841D83778AF649D0C7F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Edu Hacking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D561FE8E06FE0AE1CA477DE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Edu Hacking/Pods-Edu Hacking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Edu Hacking/Pods-Edu Hacking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Edu Hacking/Pods-Edu Hacking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		346DCBE12771DDB80093CE22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3453CAB1278D98210000C299 /* Principal.swift in Sources */,
-				346DCBED2771DDB80093CE22 /* ViewController.swift in Sources */,
+				3453CAB1278D98210000C299 /* HomeViewController.swift in Sources */,
+				346DCBED2771DDB80093CE22 /* LoginViewController.swift in Sources */,
 				346DCBE92771DDB80093CE22 /* AppDelegate.swift in Sources */,
+				3434F9EC279DF9FC004EF8D6 /* Login.swift in Sources */,
+				34211A8A27AC07D200501097 /* TabBarViewController.swift in Sources */,
+				3434F9E9279DF4FD004EF8D6 /* Launch.swift in Sources */,
 				346DCBEB2771DDB80093CE22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +385,7 @@
 		};
 		346DCBFA2771DDBA0093CE22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28AF1D00B107E362F41DAC1 /* Pods-Edu Hacking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +413,7 @@
 		};
 		346DCBFB2771DDBA0093CE22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA9E59AAF6F83210B379553 /* Pods-Edu Hacking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

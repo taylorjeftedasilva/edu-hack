@@ -9,8 +9,7 @@ import Foundation
 import UIKit
 
 
-class Principal: UIViewController {
-    
+class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configNav()
@@ -54,6 +53,7 @@ class Principal: UIViewController {
         NSLayoutConstraint.activate([
             lb.widthAnchor.constraint(equalTo: stack.widthAnchor),
             uiImg.widthAnchor.constraint(equalTo: stack.widthAnchor),
+            uiImg.topAnchor.constraint(equalTo: lb.bottomAnchor, constant: 20),
             uiImg.topAnchor.constraint(equalTo: lb.bottomAnchor, constant: 20)
         ])
         return stack
@@ -68,7 +68,6 @@ class Principal: UIViewController {
         lb.numberOfLines = 0
         lb.textAlignment = .center
         stack.addSubview(lb)
-
         let uiImg = UIImageView()
         uiImg.image = UIImage(named: "segment02")
         stack.addSubview(uiImg)
@@ -80,7 +79,8 @@ class Principal: UIViewController {
         NSLayoutConstraint.activate([
             lb.widthAnchor.constraint(equalTo: stack.widthAnchor),
             uiImg.widthAnchor.constraint(equalTo: stack.widthAnchor),
-            uiImg.topAnchor.constraint(equalTo: lb.bottomAnchor, constant: 20)
+            uiImg.topAnchor.constraint(equalTo: lb.bottomAnchor, constant: 20),
+            uiImg.heightAnchor.constraint(equalToConstant: 190),
         ])
         
         stack.isHidden = true
@@ -179,12 +179,12 @@ class Principal: UIViewController {
         return stc
     }
     
-    func configNav(){
+    func configNav() {
         navigationController?.isToolbarHidden = true
         navigationItem.hidesBackButton = true
     }
     
-    func configView(){
+    func configView() {
         mountTop(["1° DDOS","2° DDOS","3° DDOS"])
         stackView.addSubview(titleMain)
         stackView.addSubview(titleSub)
@@ -196,12 +196,13 @@ class Principal: UIViewController {
         configLayoutViews()
     }
     
-    func configLayoutViews(){
+    func configLayoutViews() {
         NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             stackView.widthAnchor.constraint(equalTo: view.widthAnchor),
             stackView.heightAnchor.constraint(equalTo: view.heightAnchor),
             titleMain.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
-            titleMain.centerYAnchor.constraint(equalTo: stackView.topAnchor, constant: 30),
+            titleMain.centerYAnchor.constraint(equalTo: stackView.topAnchor),
             titleSub.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
             titleSub.centerYAnchor.constraint(equalTo: titleMain.bottomAnchor, constant: 15),
             top.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant: -60),
@@ -214,9 +215,12 @@ class Principal: UIViewController {
             segmentElements.topAnchor.constraint(equalTo: segmentControl.bottomAnchor, constant: 30),
             segmentElements.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant:  -60),
             segmentElements.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
+            segmentElements.heightAnchor.constraint(equalToConstant: 190),
             segmentElementsPercentual.topAnchor.constraint(equalTo: segmentControl.bottomAnchor, constant: 30),
             segmentElementsPercentual.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant:  -60),
             segmentElementsPercentual.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
+            segmentElementsPercentual.heightAnchor.constraint(equalToConstant: 190)
+            
         ])
        
     }

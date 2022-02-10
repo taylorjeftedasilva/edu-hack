@@ -1,58 +1,66 @@
 //
-//  ViewController.swift
+//  Launch.swift
 //  Edu Hacking
 //
-//  Created by Taylor Jefte da silva on 21/12/21.
+//  Created by Taylor Jefte da silva on 23/01/22.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+
+class Launch: UIView{
+    
+    enum ConstantesDefault {
+        
+        enum Fonts: String {
+            case fontDefault = "Helvetica"
+        }
+        
+    }
     
     var titleHacking = UILabel()
     var iconHacking = UIImageView()
     
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
+    override init(frame: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)) {
+        super.init(frame: frame)
         configTitle()
         configImage()
-        // Do any additional setup after loading the view.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in
-            let vw: Principal = Principal()
-            self?.navigationController?.pushViewController(vw, animated: true)
-        })
     }
-
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     func configTitle() {
         self.titleHacking.textColor = .white
-        titleHacking.font = UIFont(name:"Roboto-Black", size: 50.0) ?? UIFont(name:"ArialRoundedMTBold", size: 50.0)
+        titleHacking.font = UIFont(name: ConstantesDefault.Fonts.fontDefault.rawValue , size: 50.0) ?? UIFont(name:"ArialRoundedMTBold", size: 50.0)
         self.titleHacking.numberOfLines = 0
         self.titleHacking.text = String("Edu\nHacking")
-        view.addSubview(titleHacking)
+        self.addSubview(titleHacking)
         self.titleHacking.translatesAutoresizingMaskIntoConstraints = false
         setConstraintsTitle()
     }
     
     func configImage() {
         iconHacking.image = UIImage(named: "hack")
-        view.addSubview(iconHacking)
+        self.addSubview(iconHacking)
         self.iconHacking.translatesAutoresizingMaskIntoConstraints = false
         setConstraintImage()
     }
     
     func setConstraintsTitle() {
-        self.titleHacking.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        self.titleHacking.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+        self.titleHacking.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        self.titleHacking.centerYAnchor.constraint(equalTo: topAnchor, constant: 200).isActive = true
     }
     
     func setConstraintImage() {
-        self.iconHacking.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        self.iconHacking.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         self.iconHacking.centerYAnchor.constraint(equalTo: titleHacking.bottomAnchor, constant: 139).isActive = true
         
         self.iconHacking.widthAnchor.constraint(equalToConstant: 240).isActive = true
         self.iconHacking.heightAnchor.constraint(equalToConstant: 206).isActive = true
     }
+    
 }
-
